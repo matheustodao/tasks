@@ -24,6 +24,12 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "jsx-quotes": ["error"],
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "class-methods-use-this": "off",
+    "import/extensions": ["error", { "ts": "never" }],
+    "import/no-unresolved": "off",
+    "consistent-return": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   }
 }
