@@ -23,7 +23,7 @@ export default createGlobalStyle`
       display: grid;
       grid-template-columns: 19.2rem auto;
 
-      > header#menu {
+      > #portal #menu {
         grid-area: 1;
         width: 19.2rem;
         height: 100vh;

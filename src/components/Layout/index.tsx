@@ -9,9 +9,7 @@ interface Props {
 export default function Layout({ children }: Props) {
   return (
     <Container>
-      <header id="menu">
-        <Menu />
-      </header>
+      <Menu />
       <div id="content">
         {children}
       </div>
