@@ -10,6 +10,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={defaultTheme}>
       <Head>
         <title>Tasks</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <GlobaStyle />
       <Layout>
