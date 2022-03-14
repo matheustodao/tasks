@@ -15,6 +15,12 @@ export const Container = styled.header`
   border-radius: 0;
   width: 19.2rem;
   height: 100vh;
+
+  @media screen and (min-width: 375px){
+    position: fixed;
+    height: 100%;
+  }
+
   padding: 3.4rem 2.4rem;
   > div {
     border-radius: 0;
@@ -72,7 +78,6 @@ export const WrapperRoutes = styled.div`
 export const Route = styled.li`
   width: 100%;
   list-style: none;
-  width: 100%;
   padding: 8px 16px;
   border-radius: ${({ theme }) => theme.borderRadius['10']};
   text-transform: capitalize;

@@ -37,7 +37,7 @@ export default function Menu() {
       mountedValue={isOpen}
       onIsOpen={(value: boolean) => setIsOpen(value)}
     >
-      <Container>
+      <Container id="menu">
         <InformationWrapper>
           <Image
             src="/images/icons/avatar.svg"
