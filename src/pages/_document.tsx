@@ -12,6 +12,8 @@ export default function Document() {
       </Head>
       <body>
         <div id="portal" />
+        <div id="modal-task" />
+        <div id="modal-task-edit" />
         <Main />
         <NextScript />
       </body>
