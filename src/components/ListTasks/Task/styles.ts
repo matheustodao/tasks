@@ -62,6 +62,7 @@ export const DropDownOverlay = styled.div`
   display: ${({ isVisible }: { isVisible: boolean }) => (isVisible ? 'flex' : 'none')};
   flex-direction: column;
   padding: 1.1rem 1rem;
+  z-index: 100;
   button {
     color: #999999;
     font-family: ${({ theme }) => theme.fonts.montserrat};
