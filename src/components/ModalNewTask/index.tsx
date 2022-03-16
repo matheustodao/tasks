@@ -76,7 +76,7 @@ export default function ModalNewTask() {
           >
             Cancelar
           </button>
-          <button type="submit" disabled={!title}>Salvar</button>
+          <button type="submit" disabled={!title.trim()}>Salvar</button>
         </Actions>
       </Container>
     </PortalProvider>
