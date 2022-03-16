@@ -15,12 +15,13 @@ Ou execute seguinte comandos no terminal.
 - Axios
 
 ## O que foi feito
-- Mobile First
+- Mobile First.
 - Página inicial com a lista das tasks.
 - Modal para criar uma nova task.
 - Modal para edição.
-- Deleção da task
-- Responsividade do layout.
+- Deleção da task.
+- Campo de pesquisa
+- Responsividade do layout seguindo o layout disponibilizado.
 
 ## Obrigado!
 > Oi, sou Matheus Todao!.
