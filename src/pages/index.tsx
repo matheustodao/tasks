@@ -1,5 +1,5 @@
 import { AxiosResponse } from 'axios';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { useMemo, useState } from 'react';
 import { Container, InputSearchContainer } from '../assets/styles/pages';
 import ListTasks from '../components/ListTasks';
@@ -49,13 +49,12 @@ export default function Home({ tasks }: Props) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data: tasks }: AxiosResponse<Task[]> = await tasksService.getAllTasks();
 
   return {
     props: {
       tasks,
     },
-    revalidate: 60,
   };
 };
