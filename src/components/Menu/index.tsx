@@ -3,13 +3,13 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Portal from '../Portal';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { routesMenu } from './routesMenu';
 
 import {
   Container, InformationWrapper, Information, Divider, WrapperRoutes, Route, WrapperButtonMenu,
 } from './styles';
+import MenuPortal from './components/MenuPortal';
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState<true | false>(false);
@@ -32,10 +32,9 @@ export default function Menu() {
   }
 
   return (
-    <Portal
-      selector="#portal"
-      mountedValue={isOpen}
-      onIsOpen={(value: boolean) => setIsOpen(value)}
+    <MenuPortal
+      modalVisible={isOpen}
+      setModalVisible={(value: boolean) => setIsOpen(value)}
     >
       <Container id="menu">
         <InformationWrapper>
@@ -75,6 +74,6 @@ export default function Menu() {
           </ul>
         </WrapperRoutes>
       </Container>
-    </Portal>
+    </MenuPortal>
   );
 }
