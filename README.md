@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Como testar a aplicação?
+  > "A experiência é necessária para saber-se qualquer coisa."
+  **Sêneca**
 
-## Getting Started
+#### [Clica aqui](https://tasks-iota.vercel.app/) para ver a aplicação funcionando.<br><br>
 
-First, run the development server:
+Ou execute seguinte comandos no terminal.
+> `yarn install` após a instalação da node_modules usa `yarn dev`
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Techs utilizadas
+- Next.js usando SSR
+- Typescript
+- Styled Components
+- Axios
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## O que foi feito
+- Mobile First
+- Página inicial com a lista das tasks.
+- Modal para criar uma nova task.
+- Modal para edição.
+- Deleção da task
+- Responsividade do layout.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Obrigado!
+> Oi, sou Matheus Todao!.
+>> Eu sou pessoa que aplica na minha vida a filosofia do Bruce Lee "Seja como a água", que nada menos é ser flexível e adaptativo em qualquer situação, como ele diz: “As pessoas precisam crescer por intermédio de frustrações habilidosas, caso contrário, não terão incentivo para desenvolver os próprios meios e caminhos para lidar com o mundo”, concordo, pois a primeira vez algo difícil ou desafiador acontecer, ficaremos devastado e sem saber o que fazer. No meus estudos aprendo e ouço como fosse a primeira vez mesmo tendo conhecimento sobre aquilo, assim como o filósofo Seneca diz: "Qualquer seja o valor dos meus livros, lê-os como sendo eu alguém que ainda busca a verdade [...]".
+>>> ***Conto mais sobre a minha trajetória [No readme aqui no Github](https://github.com/matheustodao)***
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+_______
+**Onde pode me encontrar**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [Linkedin](https://linkedin.com/in/matheustodao)<br>
+- [Github](https://github.com/matheustodao)<br>
+- [Meu Site](https://todaomatheus.vercel.app)<br>
+- Ou no e-mail _todaomatheus@hotmail.com_
+_______
 
-## Learn More
+**Os dois últimos projetos trabalhando ou concluído atualmente**
 
-To learn more about Next.js, take a look at the following resources:
+- [Pet Finding](https://github.com/matheustodao/pet-finding-frontend)<br>
+- [Lading Page de cryptos com os dados dinâmicos](https://github.com/matheustodao/crypto-cap)<br>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
