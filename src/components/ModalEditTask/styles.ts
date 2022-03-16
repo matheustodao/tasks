@@ -39,6 +39,7 @@ export const Actions = styled.div`
     background: none;
     &[disabled] {
       cursor: not-allowed;
+      color: #737373;
     }
     + button {
       margin-left: 1.4rem;
