@@ -11,6 +11,7 @@ export default createGlobalStyle`
     font-family: 'Sora', sans-serif;
     border-radius: ${({ theme }) => theme.borderRadius[10]};
     font-family: ${({ theme }) => theme.fonts.roboto};
+    outline: none;
   }
 
   body {
@@ -18,7 +19,6 @@ export default createGlobalStyle`
     color: #252525;
     background: ${({ theme }) => theme.colors.background};
     word-break: break-all;
-
     @media screen and (min-width: 376px){
       display: grid;
       grid-template-columns: 19.2rem auto;
@@ -44,17 +44,13 @@ export default createGlobalStyle`
     border: none;
   }
 
-  #portal {
-    width: 100vw;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    border-radius: 0;
+  #portal, #modal-task {
+    z-index: 1000;
+  }
 
-    @media screen and (min-width: 376px) {
-      width: 1.92rem;
-      background: none;
-      backdrop-filter: none;
-    }
+  #modal-task, #modal-task-edit {
+    display: none;
+    position: absolute;
+    left: 0;
   }
 `;
