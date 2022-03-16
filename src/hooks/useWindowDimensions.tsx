@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 type WindowDimensions = {
-  screenWidth: number | false,
+  screenWidth: number,
   // screenHeight: number
 }
 
@@ -14,10 +14,12 @@ export default function useWindowDimensions() {
   }
 
   useEffect(() => {
-    setScreenWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
+    if (hasWindow) {
+      setScreenWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+    }
     return () => window.removeEventListener('resize', handleResize);
-  }, [hasWindow]);
+  }, [hasWindow, handleResize]);
 
   return { screenWidth } as WindowDimensions;
 }
